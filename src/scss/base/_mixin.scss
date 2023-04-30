@@ -6,7 +6,7 @@
     }
 }
 
-@mixin tabletse{
+@mixin tablets{
     @media (min-width:786px){
         @content;
     }
