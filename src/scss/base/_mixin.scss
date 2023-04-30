@@ -1,0 +1,19 @@
+@use "variables" as v;
+
+@mixin iphone{
+    @media (min-width:480px){
+        @content;
+    }
+}
+
+@mixin tabletse{
+    @media (min-width:786px){
+        @content;
+    }
+}
+
+@mixin desktop{
+    @media (min-width:982px){
+        @content;
+    }
+}
