@@ -1,0 +1,10 @@
+@use "base/variables" as v;
+
+body{
+    background-color: v.$rosa;
+}
+
+h1{
+    color: v.$blanco;
+}
+
