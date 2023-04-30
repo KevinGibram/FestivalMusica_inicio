@@ -1,0 +1,21 @@
+@use "src/scss/base/variables" as v;
+
+.header{
+    background-color: v.$verde;
+
+
+    h1{
+        color: v.$blanco;
+    }
+}
+
+.navegacion-principal{
+   a{
+    color: v.$blanco;
+    font-size: 2.4rem;
+
+    &:hover{ //ampersand para elominar espacios
+        color: v.$amarillo;
+    }
+   } 
+}
