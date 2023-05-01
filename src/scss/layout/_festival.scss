@@ -1,0 +1,28 @@
+@use 'src/scss/base/variables' as v;
+@use 'src/scss/base/mixin' as m;
+
+.sobre-festival{
+    margin-top: 5rem;
+    
+    @include m.tablets {
+        @include m.grid(2, 5rem);
+    }
+}
+
+.contenido-festival{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-top: 5rem;
+    @include m.tablets {
+        margin-top: 0;
+    }
+    h2{
+        margin-bottom: 2rem;
+    }
+    .fecha{
+        color: v.$rosa;
+        font-weight: 700;
+    }
+}
