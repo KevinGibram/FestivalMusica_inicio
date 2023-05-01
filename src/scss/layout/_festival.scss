@@ -3,7 +3,8 @@
 
 .sobre-festival{
     margin-top: 5rem;
-    
+    margin-bottom: 5rem;
+
     @include m.tablets {
         @include m.grid(2, 5rem);
     }

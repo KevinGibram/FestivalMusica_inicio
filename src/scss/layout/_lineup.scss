@@ -1,0 +1,87 @@
+@use 'src/scss/base/variables' as v;
+@use 'src/scss/base/mixin' as m;
+
+.lineUp{
+    background-color: v.$rosa;
+    padding: 5rem 0;
+
+    h3, p{
+        text-align: center;
+        color: v.$blanco;
+    }
+
+    .dia{
+        text-transform: uppercase;
+        margin-bottom: 5rem 0;
+    }
+}
+
+.contenedor_escenario{
+    @include m.tablets {
+       @include m.grid(2, 5rem);
+    }
+    
+    p{
+        color: v.$negro;
+    }
+    
+    .escenario{
+        margin-top: 2rem;
+        padding-top: 2rem;
+
+        @include m.tablets {
+            margin-top: 0;
+        }
+
+        .nombre-escenario{
+            &:after{
+                content: '';
+                display: block;
+                width: 20rem;
+                height: 10rem;
+                background-size: 15rem;
+                background-repeat: no-repeat;
+                background-position: center center;
+                margin: 2em auto 0 auto;
+            }
+        }
+    }    
+}
+
+.edm .nombre-escenario:after{
+    background-image: url(../../../build/img/icono_edm.png);
+}
+
+.rock .nombre-escenario:after{
+    background-image: url(../../../build/img/icono_rock.png);
+}
+.calendario{
+    @include m.resetear-lista;
+
+    li{
+        padding: 2.5rem;
+        font-weight: 700;
+
+        span{
+            font-weight: 400;
+        }
+    }
+}
+.bgAmarillo{
+    background-color: v.$amarillo;
+
+    li:nth-child(odd){
+        background-color: darken( v.$amarillo, 10%);
+    }
+}
+    
+.bgVerde{
+    background-color: v.$verde;
+
+    li:nth-child(odd){
+        background-color: darken( v.$verde, 10%);
+    }
+}
+
+
+
