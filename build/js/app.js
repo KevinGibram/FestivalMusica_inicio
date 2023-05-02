@@ -33,6 +33,7 @@ function mostarImagen(id){
     <img width="200" height="300" src="src/img/grande/${id}.jpg" alt="Imagen de una galeria">
     `; 
 
+    //Crea el overlay con imagen
     const overlay = document.createElement("div");
     overlay.appendChild(imagen);
     overlay.classList.add("overlay");
@@ -41,10 +42,13 @@ function mostarImagen(id){
     const closeButton = document.createElement("button");
     closeButton.innerHTML = "X";
     closeButton.addEventListener("click", function() {
+        const body = document.querySelector("body");        
+        body.classList.remove("fijar-body");  
         overlay.remove(); //remove es metodo de js
     });
     overlay.appendChild(closeButton);
 
+    //Anadiendolo al html
     const body = document.querySelector("body");
     body.appendChild(overlay);            
     body.classList.add("fijar-body");  
