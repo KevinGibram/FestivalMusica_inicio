@@ -6,6 +6,8 @@
 
     &.fijo{
         @include m.tablets {
+            left: 0;
+            top: 0;
             position: fixed;
             width: 100%;
             box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.675); // Sombra debajo

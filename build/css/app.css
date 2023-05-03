@@ -325,6 +325,9 @@ body {
 body.fijar-body {
   overflow: hidden;
 }
+body.body-scroll {
+  padding-top: 8.6rem;
+}
 
 p {
   font-size: 2rem;
@@ -370,6 +373,8 @@ img {
 }
 @media (min-width: 786px) {
   .header.fijo {
+    left: 0;
+    top: 0;
     position: fixed;
     width: 100%;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.675);
