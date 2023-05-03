@@ -3,6 +3,16 @@
 
 .header{
     background-color: v.$verde;
+
+    &.fijo{
+        @include m.tablets {
+            position: fixed;
+            width: 100%;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.675); // Sombra debajo
+        }
+        
+        
+    }
     h1{
         color: v.$blanco;
         text-align: center;

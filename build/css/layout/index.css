@@ -1,6 +1,13 @@
 .header {
   background-color: #4CB8B3;
 }
+@media (min-width: 786px) {
+  .header.fijo {
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.675);
+  }
+}
 .header h1 {
   color: #ffffff;
   text-align: center;
