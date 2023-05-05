@@ -1,4 +1,5 @@
 @use "variables" as v;
+@use 'src/scss/base/mixin' as m;
 
 html{
     font-size: 62.5%;
@@ -15,13 +16,18 @@ body{
     font-family: v.$fuente_principal;
     font-size: 1.6rem;
 
-    &.fijar-body{
-        overflow: hidden;
-    }
+  
+    @include m.tablets {
 
-    &.body-scroll{
+        &.fijar-body{
+            overflow: hidden;
+        }
+
+        &.body-scroll{
         padding-top: 8.6rem;
+        }
     }
+    
 }
 p{
     font-size: 2rem;
